@@ -27,4 +27,9 @@ node {
     stage('Archive') {
         junit allowEmptyResults: true, testResults: '**/target/**/TEST*.xml'
     }
+
+     stage('ArchiveArtifacts') {
+      archiveArtifacts artifacts: 'spring-boot-sample.jar', fingerprint: true
 }
+}
+
