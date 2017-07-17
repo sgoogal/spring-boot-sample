@@ -29,7 +29,7 @@ node {
     }
 
      stage('ArchiveArtifacts') {
-      archiveArtifacts artifacts: 'spring-boot-sample.jar', fingerprint: true
+      archiveArtifacts artifacts: 'target/spring-boot-sample.jar', fingerprint: true
 }
 }
 
